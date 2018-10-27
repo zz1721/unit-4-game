@@ -8,10 +8,10 @@
     var Diamond= Math.floor(Math.random()*11)+1;
     var Opal=Math.floor(Math.random()*11)+1;
     var Emerald= Math.floor(Math.random()*11)+1;
-    var userTotalPoints="userTotalPoints";
+    var userTotalPoints=$("#score");
     var randoms = $("#random");
     var crystal = $("#gem");
-    var finalscores = Ruby + Diamond + Emerald + Opal;
+    var finalscores = Diamond+Ruby+Opal+Emerald;
 
 
     $("#random").html("Random Result: " + computerPickNum);
@@ -19,18 +19,48 @@
    
     // console.log (computerPickNum);
 
+    
 
-    $(".crystal").on("click", function (){
+    $("#ruby").on("click", function(){
+        userTotalPoints +=Ruby;
         var Ruby=Math.floor(Math.random()*11)+1;
-        var Diamond= Math.floor(Math.random()*11)+1;
-        var Opal=Math.floor(Math.random()*11)+1;
-        var Emerald= Math.floor(Math.random()*11)+1;
-        $("#ruby").html("score" + Ruby)
-        $("#emerald").html("score" + Emerald)
-        $("#opal").html("score" + Opal)
-        $("#diamond").html("score" + Diamond)
+        $("#ruby").html(Ruby);
+        // $("#score").html(userTotalPoints + Ruby)
         console.log(Ruby)
     })
+    
+    $("#emerald").on("click", function(){
+        userTotalPoints += Emerald;
+        var Emerald= Math.floor(Math.random()*11)+1;
+        $("#emerald").html(Emerald);
+        console.log(Emerald)
+    })
+
+    $("#opal").on("click", function(){
+        userTotalPoints +=Opal;
+        var Opal= Math.floor(Math.random()*11)+1;
+        $("opal").html(Opal);
+        console.log(Opal)
+    })
+
+    $("#diamond").on("click", function(){
+        userTotalPoints +=Diamond;
+        var Diamond=Math.floor(Math.random()*11)+1;
+        $("#emerald").html(Diamond)
+        console.log(Diamond)
+    })
+
+    // $(".crystal").on("click", function (){
+    //     var Ruby=Math.floor(Math.random()*11)+1;
+    //     var Diamond= Math.floor(Math.random()*11)+1;
+    //     var Opal=Math.floor(Math.random()*11)+1;
+    //     var Emerald= Math.floor(Math.random()*11)+1;
+    //     $("#ruby").html("score" + Ruby)
+    //     $("#emerald").html("score" + Emerald)
+    //     $("#opal").html("score" + Opal)
+    //     $("#diamond").html("score" + Diamond)
+    //     console.log(Ruby)
+    // })
 
 
 
