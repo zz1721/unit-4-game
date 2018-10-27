@@ -1,0 +1,52 @@
+
+h1 {
+    background-color: orange;
+    color:white;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+body {
+    background-image: url(https://wallpapercave.com/wp/6wMaBbD.jpg);
+}
+
+#intro {
+    background-color: lightcoral;
+}
+
+.intro {
+    color: green;
+}
+
+#random {
+    background-color: lightgreen;
+    width: 55px;
+    height: 150px;
+}
+
+#counting {
+    background-color:lightblue;
+    width: 55px;
+    height: 150px;
+}
+
+
+#memo {
+    background: yellow;
+}
+
+#number {
+    background: yellow;
+    width: 100px;
+    height: 70px;
+    align-content: center;
+}
+
+.crystal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

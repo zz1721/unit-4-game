@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Game</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type=text/javascript src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+   
+</head>
+<body>
+
+    <h1 class="col-md-5" id="header">CrystalsCollector!</h1>
+
+    <div id="intro" class="col-md-5">
+        <p class="intro">You will be given a random number at the start of the game</p>
+        <p class="intro">There are four Crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p class="intro">You win the game by matching your total score to random number, you lose the game if your total score goes above the random number</p>
+        <p class="intro">The value of each crystal is hidden from  you until you click on it</p>
+        <p class="intro">Each time when the game starts the game will change the values of each crystal</p>
+    </div>
+<div class="row">
+
+    <div class="col-md-1"></div>
+
+    <div class="col-md-4" id="random">
+        
+
+    </div>
+
+    <div class="col-md-4" id="counting">
+
+        <div class="win">Wins:</div>
+       <div class="loss">Losses:</div>
+
+    </div>
+
+</div>
+
+<div class="crystal">
+    
+    <button><img id="ruby" src="http://stemgemsbook.com/wp-content/uploads/2016/03/pink-gem.png"></img></button>
+    <button><img id="emerald"src="http://streetregister.com/wp-content/uploads/2016/08/gem.jpg"></img></button> 
+    <button><img id="opal" src="https://www.ajsgem.com/sites/default/files1/jeremejevite-1000.jpg"></img></button>
+    <button><img id="diamond" src="https://superawesomevectors.com/wp-content/uploads/2015/01/flat-diamond-icon.jpg"></img></button>
+    
+</div>
+
+<div>
+    <p id="memo" class="col-md-5">Your score is</p>
+</div>
+
+<div id="number" class="col-md-5" id="score"></div>
+
+<script type=text/javascript src="assets/javascript/java.js"></script>
+
+
+
+</body>
+</html>
